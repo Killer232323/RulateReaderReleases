@@ -1,0 +1,136 @@
+--------- beginning of kernel
+--------- beginning of main
+--------- beginning of system
+2023-04-06 23:17:34.821   568-956   UserRestrictionsUtils   system_process                       E  Unknown restriction queried by uid 1000 (com.android.providers.settings et al): ru.rulate
+2023-04-06 23:17:41.337  2278-2278  AppButtonsPrefCtl       com.android.settings                 E  Exception when retrieving package:ru.rulate
+                                                                                                    android.content.pm.PackageManager$NameNotFoundException: ru.rulate
+                                                                                                    	at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:206)
+                                                                                                    	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:178)
+                                                                                                    	at com.android.settings.applications.appinfo.AppButtonsPreferenceController.retrieveAppEntry(AppButtonsPreferenceController.java:361)
+                                                                                                    	at com.android.settings.applications.appinfo.AppButtonsPreferenceController.refreshUi(AppButtonsPreferenceController.java:650)
+                                                                                                    	at com.android.settings.applications.appinfo.AppButtonsPreferenceController.refreshAndFinishIfPossible(AppButtonsPreferenceController.java:497)
+                                                                                                    	at com.android.settings.applications.appinfo.AppButtonsPreferenceController.handleActivityResult(AppButtonsPreferenceController.java:289)
+                                                                                                    	at com.android.settings.applications.appinfo.AppInfoDashboardFragment.onActivityResult(AppInfoDashboardFragment.java:412)
+                                                                                                    	at androidx.fragment.app.FragmentManager$9.onActivityResult(FragmentManager.java:2830)
+                                                                                                    	at androidx.fragment.app.FragmentManager$9.onActivityResult(FragmentManager.java:2810)
+                                                                                                    	at androidx.activity.result.ActivityResultRegistry.doDispatch(ActivityResultRegistry.java:325)
+                                                                                                    	at androidx.activity.result.ActivityResultRegistry.dispatchResult(ActivityResultRegistry.java:289)
+                                                                                                    	at androidx.activity.ComponentActivity.onActivityResult(ComponentActivity.java:577)
+                                                                                                    	at androidx.fragment.app.FragmentActivity.onActivityResult(FragmentActivity.java:128)
+                                                                                                    	at com.android.settings.SettingsActivity.onActivityResult(SettingsActivity.java:357)
+                                                                                                    	at android.app.Activity.dispatchActivityResult(Activity.java:8304)
+                                                                                                    	at android.app.ActivityThread.deliverResults(ActivityThread.java:5008)
+                                                                                                    	at android.app.ActivityThread.handleSendResult(ActivityThread.java:5056)
+                                                                                                    	at android.app.servertransaction.ActivityResultItem.execute(ActivityResultItem.java:51)
+                                                                                                    	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)
+                                                                                                    	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2066)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loop(Looper.java:223)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7656)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+2023-04-06 23:17:46.556  1741-2907  WorkSourceUtil          com.google.android.gms               E  Could not find package: ru.rulate
+2023-04-06 23:17:54.168   185-188   vold                    vold                                 E  Failed to find mounted volume for /dev/null/Android/obb/ru.rulate/
+2023-04-06 23:17:54.169   568-623   StorageManagerService   system_process                       E  Failed to fixup app dir for ru.rulate
+                                                                                                    android.os.ServiceSpecificException:  (code -22)
+                                                                                                    	at android.os.Parcel.createExceptionOrNull(Parcel.java:2387)
+                                                                                                    	at android.os.Parcel.createException(Parcel.java:2357)
+                                                                                                    	at android.os.Parcel.readException(Parcel.java:2340)
+                                                                                                    	at android.os.Parcel.readException(Parcel.java:2282)
+                                                                                                    	at android.os.IVold$Stub$Proxy.fixupAppDir(IVold.java:1975)
+                                                                                                    	at com.android.server.StorageManagerService$StorageManagerInternalImpl.prepareAppDataAfterInstall(StorageManagerService.java:4703)
+                                                                                                    	at com.android.server.pm.PackageManagerService.prepareAppDataAfterInstallLIF(PackageManagerService.java:22873)
+                                                                                                    	at com.android.server.pm.PackageManagerService.executePostCommitSteps(PackageManagerService.java:16989)
+                                                                                                    	at com.android.server.pm.PackageManagerService.installPackagesLI(PackageManagerService.java:16921)
+                                                                                                    	at com.android.server.pm.PackageManagerService.installPackagesTracedLI(PackageManagerService.java:16234)
+                                                                                                    	at com.android.server.pm.PackageManagerService.lambda$processInstallRequestsAsync$22$PackageManagerService(PackageManagerService.java:14400)
+                                                                                                    	at com.android.server.pm.-$$Lambda$PackageManagerService$9znobjOH7ab0F1jsW2oFdNipS-8.run(Unknown Source:6)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:938)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                                                    	at android.os.Looper.loop(Looper.java:223)
+                                                                                                    	at android.os.HandlerThread.run(HandlerThread.java:67)
+                                                                                                    	at com.android.server.ServiceThread.run(ServiceThread.java:44)
+---------------------------- PROCESS STARTED (3321) for package ru.rulate ----------------------------
+2023-04-06 23:17:57.308  3321-3321  ru.rulate               ru.rulate                            I  The ClassLoaderContext is a special shared library.
+2023-04-06 23:17:57.329  3321-3321  NetworkSecurityConfig   ru.rulate                            D  No Network Security Config specified, using platform default
+2023-04-06 23:17:57.330  3321-3321  NetworkSecurityConfig   ru.rulate                            D  No Network Security Config specified, using platform default
+2023-04-06 23:17:57.338  3321-3321  WM-WrkMgrInitializer    ru.rulate                            D  Initializing WorkManager with default configuration.
+2023-04-06 23:17:57.358  3321-3321  TetheringManager        ru.rulate                            I  registerTetheringEventCallback:ru.rulate
+2023-04-06 23:17:57.379  3321-3321  ContextImpl             ru.rulate                            W  Failed to ensure /dev/null/Android/data/ru.rulate/cache: java.lang.SecurityException: Invalid mkdirs path: /dev/null/Android/data/ru.rulate/cache is not a known app path.
+2023-04-06 23:17:57.400  3321-3321  ContextImpl             ru.rulate                            W  Failed to ensure /dev/null/Android/data/ru.rulate/files: java.lang.SecurityException: Invalid mkdirs path: /dev/null/Android/data/ru.rulate/files is not a known app path.
+--------- beginning of crash
+2023-04-06 23:17:57.418  3321-3321  AndroidRuntime          ru.rulate                            D  Shutting down VM
+2023-04-06 23:17:57.419  3321-3321  AndroidRuntime          ru.rulate                            E  FATAL EXCEPTION: main
+                                                                                                    Process: ru.rulate, PID: 3321
+                                                                                                    java.lang.RuntimeException: Unable to create application ru.rulate.rulate.App: java.lang.IllegalArgumentException: Internal error: TypeReference constructed without actual type information
+                                                                                                    	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6717)
+                                                                                                    	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loop(Looper.java:223)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7656)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+                                                                                                    Caused by: java.lang.IllegalArgumentException: Internal error: TypeReference constructed without actual type information
+                                                                                                    	at ff.a.<init>(Unknown Source:46)
+                                                                                                    	at be.f.<init>(Unknown Source:0)
+                                                                                                    	at zd.d$q.F(Unknown Source:4)
+                                                                                                    	at gf.c$a.F(Unknown Source:4)
+                                                                                                    	at o8.j.getValue(Unknown Source:20)
+                                                                                                    	at gf.c.F(SourceFile:45)
+                                                                                                    	at gf.a.b(SourceFile:16)
+                                                                                                    	at ff.f.b(Unknown Source:7)
+                                                                                                    	at ru.rulate.rulate.App.onCreate(SourceFile:176)
+                                                                                                    	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
+                                                                                                    	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6712)
+                                                                                                    	at android.app.ActivityThread.access$1300(ActivityThread.java:237) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:223) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7656) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947) 
+2023-04-06 23:17:57.569  3321-3321  ru.rulate               ru.rulate                            I  System.exit called, status: 0
+2023-04-06 23:17:57.569  3321-3321  AndroidRuntime          ru.rulate                            I  VM exiting with result code 0, cleanup skipped.
+---------------------------- PROCESS ENDED (3321) for package ru.rulate ----------------------------
+---------------------------- PROCESS STARTED (3352) for package ru.rulate ----------------------------
+2023-04-06 23:17:57.707  3352-3352  AndroidRuntime          ru.rulate                            D  Shutting down VM
+2023-04-06 23:17:57.708  3352-3352  AndroidRuntime          ru.rulate                            E  FATAL EXCEPTION: main
+                                                                                                    Process: ru.rulate:error_handler, PID: 3352
+                                                                                                    java.lang.RuntimeException: Unable to create application ru.rulate.rulate.App: java.lang.IllegalArgumentException: Internal error: TypeReference constructed without actual type information
+                                                                                                    	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6717)
+                                                                                                    	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loop(Looper.java:223)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7656)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+                                                                                                    Caused by: java.lang.IllegalArgumentException: Internal error: TypeReference constructed without actual type information
+                                                                                                    	at ff.a.<init>(Unknown Source:46)
+                                                                                                    	at be.f.<init>(Unknown Source:0)
+                                                                                                    	at zd.d$q.F(Unknown Source:4)
+                                                                                                    	at gf.c$a.F(Unknown Source:4)
+                                                                                                    	at o8.j.getValue(Unknown Source:20)
+                                                                                                    	at gf.c.F(SourceFile:45)
+                                                                                                    	at gf.a.b(SourceFile:16)
+                                                                                                    	at ff.f.b(Unknown Source:7)
+                                                                                                    	at ru.rulate.rulate.App.onCreate(SourceFile:176)
+                                                                                                    	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1192)
+                                                                                                    	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6712)
+                                                                                                    	at android.app.ActivityThread.access$1300(ActivityThread.java:237) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:223) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7656) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947) 
+2023-04-06 23:17:57.847  3352-3352  e:error_handle          ru.rulate                            I  System.exit called, status: 0
+2023-04-06 23:17:57.847  3352-3352  AndroidRuntime          ru.rulate                            I  VM exiting with result code 0, cleanup skipped.
+---------------------------- PROCESS ENDED (3352) for package ru.rulate ----------------------------
