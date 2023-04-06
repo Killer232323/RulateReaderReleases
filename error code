@@ -180,8 +180,5 @@ org.gradle.configurationcache.ConfigurationCacheError: Configuration cache state
 	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:297)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:49)
-Caused by: java.util.ConcurrentModificationException
-	at org.gradle.configurationcache.serialization.CombinatorsKt.writeMapEntries(Combinators.kt:250)
-	at org.gradle.configurationcache.serialization.CombinatorsKt$writeMapEntries$1.invokeSuspend(Combinators.kt)
-	... 175 more
+
 
