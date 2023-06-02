@@ -3,9 +3,9 @@
 "msg":"",
 "response":{
 "verapp":1,
-"startapp": false,
-"errorapp":"Проверка",
-"adsstartapp":true,
+"startapp": true,
+"errorapp":"Ошибка",
+"adsstartapp":false,
 "adsmaincatalogapp":true,
 "adsmainscrinapp":true
 }
