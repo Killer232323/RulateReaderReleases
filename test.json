@@ -6,7 +6,7 @@
 "startapp": true,
 "errorapp":"Ошибка",
 "adsstartapp":false,
-"adsmaincatalogapp":true,
-"adsmainscrinapp":true
+"adsmaincatalogapp":false,
+"adsmainscrinapp":false
 }
 }
