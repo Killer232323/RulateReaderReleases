@@ -2,11 +2,23 @@
 "status":"success",
 "msg":"",
 "response":{
-"verapp":1,
-"startapp": true,
-"errorapp":"Ошибка",
-"adsstartapp":true,
-"adsmaincatalogapp":false,
-"adsmainscrinapp":false
-}
+	"startapp": true,
+	"errorapp":"Ошибка",
+	"adsstartapp":true,
+	"adsmaincatalogapp":false,
+	"adsmainscrinapp":false,
+	
+	"verapp":1,
+	
+	"minverapp":1.1,
+	
+	"message":{
+		"id": 1,
+		"message":"Тестовый"
+		}
+	},
+	"messagenotclose":{
+		"message":"Тестовый"
+		}
+	}
 }
