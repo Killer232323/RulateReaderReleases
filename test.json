@@ -4,7 +4,7 @@
 "response":{
 	"startapp": true,
 	"errorapp":"Ошибка",
-	"adsstartapp":true,
+	"adsstartapp":false,
 	"adsmaincatalogapp":false,
 	"adsmainscrinapp":false,
 	
