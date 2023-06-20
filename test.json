@@ -9,7 +9,7 @@
 	"adsmainscrinapp":false,
 	
 	"verapp":2,
-	
+	"urlapp":"https://raw.githubusercontent.com/Killer232323/RulateReaderReleases/main/Rulate-standard-armeabi-v7a-release.apk",
 	"minverapp":2,
 	
 	"message":{
