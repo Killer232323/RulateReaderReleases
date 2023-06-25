@@ -5,7 +5,7 @@
 	"startapp": true,
 	"errorapp":"Ошибка",
 	"adsstartapp":false,
-	"adsmaincatalogapp":true,
+	"adsmaincatalogapp":false,
 	"adsmainscrinapp":false,
 	
 	"verapp":2,
