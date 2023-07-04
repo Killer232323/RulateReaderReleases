@@ -4,9 +4,9 @@
 "response":{
 	"startapp": true,
 	"errorapp":"Ошибка",
-	"adsstartapp":false,
-	"adsmaincatalogapp":false,
-	"adsmainscrinapp":false,
+	"adsstartapp":true,
+	"adsmaincatalogapp":true,
+	"adsmainscrinapp":true,
 	
 	"verapp":2,
 	"urlapp_arm64_v8a":"https://github.com/Killer232323/RulateReaderReleases/releases/download/Update/Rulate-standard-arm64-v8a-release.apk",
